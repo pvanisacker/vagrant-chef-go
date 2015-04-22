@@ -1,6 +1,6 @@
 {
   "nodes": {
-    "chefserver.chef.com": {
+    "chefserver.chefsplunk.com": {
       ":ip": "192.168.35.5",
       "ports": [],
       ":memory": 3072,
@@ -8,7 +8,7 @@
       ":box": "ubuntu/trusty64",
       ":bootstrap": "bootstrap-chefserver.sh"
     },
-    "chefclient.chef.com":{
+    "chefclient.chefsplunk.com":{
       ":ip": "192.168.35.6",
       "ports": [],
       ":memory": 512,
@@ -16,29 +16,21 @@
       ":box": "ubuntu/trusty64",
       ":bootstrap": "bootstrap-chefclient.sh"
     },
-    "goserver.chef.com": {
+    "splunkserver.chefsplunk.com": {
       ":ip": "192.168.35.101",
       "ports": [],
       ":memory": 1024,
       ":cpus": 1,
       ":box": "ubuntu/trusty64",
-      ":bootstrap": "bootstrap-goserver.sh"
+      ":bootstrap": "bootstrap-splunkserver.sh"
     },
-    "goagent01.chef.com": {
+    "splunkforwarder.chefsplunk.com": {
       ":ip": "192.168.35.121",
       "ports": [],
       ":memory": 512,
       ":cpus": 1,
       ":box": "ubuntu/trusty64",
-      ":bootstrap": "bootstrap-goagent.sh"
-    },
-    "goagent02.chef.com": {
-      ":ip": "192.168.35.122",
-      "ports": [],
-      ":memory": 512,
-      ":cpus": 1,
-      ":box": "ubuntu/trusty64",
-      ":bootstrap": "bootstrap-goagent.sh"
+      ":bootstrap": "bootstrap-splunkforwarder.sh"
     }
   }
 }

@@ -14,7 +14,7 @@ log_level				:info
 log_location			STDOUT
 validation_client_name	'adminorg-validator'
 validation_key			'/etc/chef/adminorg-validator.pem'
-chef_server_url			'https://chefserver.chef.com:443/organizations/adminorg'
+chef_server_url			'https://chefserver.chefsplunk.com:443/organizations/adminorg'
 enable_reporting		true
 ssl_verify_mode			:verify_none
 EOF

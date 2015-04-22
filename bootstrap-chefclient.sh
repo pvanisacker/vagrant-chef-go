@@ -7,4 +7,4 @@ sudo apt-get -q -y upgrade
 
 sudo dpkg -i /vagrant/packages/chefdk_*.deb
 
-sudo -u vagrant /vagrant/bootstrap-chefclient-go.sh
+sudo -u vagrant /vagrant/bootstrap-chefclient-splunk.sh
